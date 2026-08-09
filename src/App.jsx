@@ -108,8 +108,8 @@ const Navbar = () => {
          <a href="#about" onClick={handleScroll} className="hover:text-accent transition-colors">О нас</a>
          <a href="#services" onClick={handleScroll} className="hover:text-accent transition-colors">Услуги</a>
        </div>
-       <div className="flex justify-center cursor-pointer shrink-0 mx-2">
-         <img src={`${import.meta.env.BASE_URL}ikonka.png`} alt="SYNDICATE" className="h-6 md:h-16 drop-shadow-md" />
+       <div className="flex-shrink-0 cursor-pointer z-50 hover:scale-105 transition-transform" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+         <img src={`${import.meta.env.BASE_URL}ikonka.png`} alt="SYNDICATE" className="h-8 md:h-12 object-contain filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" />
        </div>
        <div className="flex justify-start gap-2 md:gap-12 flex-1 ml-2 md:ml-12">
          <a href="#faq" onClick={handleScroll} className="hover:text-accent transition-colors">FAQ</a>
@@ -220,7 +220,7 @@ const Hero = ({ onOpenBooking }) => {
   }, []);
 
   return (
-    <header ref={heroRef} className="relative w-full h-[100dvh] overflow-hidden flex flex-col bg-[#050505]">
+    <header ref={heroRef} className="relative w-full h-[100vh] overflow-hidden flex flex-col bg-[#050505]">
        <video 
          ref={videoRef}
          src={`${import.meta.env.BASE_URL}video/0809.mp4`}
@@ -252,7 +252,7 @@ const Hero = ({ onOpenBooking }) => {
           </button>
        </div>
 
-       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 pt-2 pb-0 md:py-6 gap-1 md:gap-0 bg-black/40 backdrop-blur-2xl text-[11px] md:text-sm font-oswald tracking-[0.2em] text-parchment/90 font-bold uppercase mt-auto border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 pt-2 pb-24 md:pb-6 gap-1 md:gap-0 bg-black/40 backdrop-blur-2xl text-[11px] md:text-sm font-oswald tracking-[0.2em] text-parchment/90 font-bold uppercase mt-auto border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Phone className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> +7 (999) 123-45-67</div>
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><MapPin className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> г. Ишимбай, ул. Геологическая 87</div>
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Clock className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> ПН-ВС: 10:00 - 20:00</div>
