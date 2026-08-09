@@ -220,7 +220,7 @@ const Hero = ({ onOpenBooking }) => {
   }, []);
 
   return (
-    <header ref={heroRef} className="relative w-full h-[100dvh] overflow-hidden flex flex-col bg-[#050505]">
+    <header ref={heroRef} className="relative w-full h-[100svh] overflow-hidden flex flex-col bg-[#050505]">
        <video 
          ref={videoRef}
          src={`${import.meta.env.BASE_URL}video/0809.mp4`}
