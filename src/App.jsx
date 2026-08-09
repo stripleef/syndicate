@@ -109,7 +109,7 @@ const Navbar = () => {
          <a href="#services" onClick={handleScroll} className="hover:text-accent transition-colors">Услуги</a>
        </div>
        <div className="flex justify-center cursor-pointer shrink-0">
-         <img src="/ikonka.png" alt="SYNDICATE" className="h-10 md:h-16 drop-shadow-md" />
+         <img src={`${import.meta.env.BASE_URL}ikonka.png`} alt="SYNDICATE" className="h-10 md:h-16 drop-shadow-md" />
        </div>
        <div className="flex justify-start gap-4 md:gap-12 flex-1 ml-4 md:ml-12">
          <a href="#faq" onClick={handleScroll} className="hover:text-accent transition-colors">FAQ</a>
@@ -223,7 +223,7 @@ const Hero = ({ onOpenBooking }) => {
     <header ref={heroRef} className="relative w-full h-[100svh] overflow-hidden flex flex-col bg-[#050505]">
        <video 
          ref={videoRef}
-         src="/video/main-1554591349.mp4" 
+         src={`${import.meta.env.BASE_URL}video/main-1554591349.mp4`}
          autoPlay 
          loop={false} 
          muted 
@@ -286,7 +286,7 @@ const About = () => {
         </div>
         <div className="relative">
           <div className="absolute inset-0 border-2 border-accent translate-x-4 translate-y-4 z-0" />
-          <img src="/photo/vhod.jpg" alt="Вход в Syndicate" className="relative z-10 w-full h-auto object-cover grayscale-[30%] contrast-125" />
+          <img src={`${import.meta.env.BASE_URL}photo/vhod.jpg`} alt="Вход в Syndicate" className="relative z-10 w-full h-auto object-cover grayscale-[30%] contrast-125" />
         </div>
       </div>
     </section>
@@ -341,7 +341,7 @@ const Services = () => {
           {/* Center Un-stretched Graphic with Fading Edges */}
           <div className="hidden md:flex flex-col items-center justify-center w-[30%] shrink-0">
              <img 
-                src="/center-graphic.png" 
+                src={`${import.meta.env.BASE_URL}center-graphic.png`}
                 alt="Center Graphic" 
                 onClick={() => setSpinDeg(prev => prev + 360)}
                 className="w-full max-w-[500px] object-contain drop-shadow-2xl cursor-pointer"
@@ -365,10 +365,10 @@ const Services = () => {
 // Gallery
 const Gallery = () => {
   const images = [
-    '/gallery.jpg',
-    '/gallery2.jpg',
-    '/gallery3.jpg',
-    '/gallery4.jpg'
+    `${import.meta.env.BASE_URL}photo/gallery.jpg`,
+    `${import.meta.env.BASE_URL}photo/gallery2.jpg`,
+    `${import.meta.env.BASE_URL}photo/gallery3.jpg`,
+    `${import.meta.env.BASE_URL}photo/gallery4.jpg`
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -471,7 +471,7 @@ const FAQ = () => {
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-center">
         {/* Left image/graphic */}
         <div className="w-full md:w-5/12 flex flex-col items-center justify-center pt-4 order-2 md:order-1">
-           <img src="/vector-chair.png" alt="Vintage Chair" className="w-1/2 max-w-[180px] md:w-full md:max-w-[450px] object-contain mix-blend-screen opacity-90" />
+           <img src={`${import.meta.env.BASE_URL}vector-chair.png`} alt="Vintage Chair" className="w-1/2 max-w-[180px] md:w-full md:max-w-[450px] object-contain mix-blend-screen opacity-90" />
            <div className="font-display text-3xl md:text-4xl tracking-[0.2em] text-white/50 mt-4 text-center uppercase">SYNDICATE</div>
         </div>
         
@@ -576,7 +576,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-[#050505] py-16 px-6 text-center overflow-hidden border-t border-white/5 z-10">
       <div className="relative z-10">
-        <img src="/ikonka.webp" alt="Syndicate" className="h-24 mx-auto mb-10 opacity-90 drop-shadow-lg" />
+        <img src={`${import.meta.env.BASE_URL}ikonka.webp`} alt="Syndicate" className="h-24 mx-auto mb-10 opacity-90 drop-shadow-lg" />
         <div className="flex justify-center gap-6 font-oswald text-xs uppercase tracking-widest text-white/50 mb-8">
            <a href="#" className="hover:text-accent transition-colors">Instagram</a>
            <a href="#" className="hover:text-accent transition-colors">VKontakte</a>
