@@ -466,9 +466,9 @@ const FAQ = () => {
 
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row gap-8 md:gap-20 items-center">
         {/* Left image/graphic */}
-        <div className="hidden md:flex w-full md:w-5/12 flex-col items-center justify-center pt-4 order-2 md:order-1">
-           <img src={`${import.meta.env.BASE_URL}vector-chair.png`} alt="Vintage Chair" className="w-2/5 max-w-[150px] md:w-full md:max-w-[450px] object-contain mix-blend-screen opacity-90" />
-           <div className="font-display text-2xl md:text-4xl tracking-[0.2em] text-white/50 mt-4 text-center uppercase">SYNDICATE</div>
+        <div className="w-full md:w-5/12 flex flex-col items-center justify-center pt-4 order-2 md:order-1">
+           <img src={`${import.meta.env.BASE_URL}vector-chair.png`} alt="Vintage Chair" className="hidden md:block w-2/5 max-w-[150px] md:w-full md:max-w-[450px] object-contain mix-blend-screen opacity-90" />
+           <div className="font-display text-3xl md:text-4xl tracking-[0.2em] text-white/20 md:text-white/50 mt-8 md:mt-4 text-center uppercase">SYNDICATE</div>
         </div>
         
         {/* Right FAQ */}
