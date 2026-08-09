@@ -476,7 +476,7 @@ const FAQ = () => {
         
         {/* Right FAQ */}
         <div className="w-full md:w-7/12 order-1 md:order-2">
-          <div className="flex justify-between items-start mb-12">
+          <div className="flex justify-between items-start mb-6 md:mb-12">
             <div>
               <h4 className="font-oswald tracking-widest text-accent uppercase text-sm mb-2">Syndicate</h4>
               <h2 className="font-display text-5xl md:text-7xl text-parchment drop-shadow-md">FAQ</h2>
