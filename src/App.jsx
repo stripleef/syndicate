@@ -103,13 +103,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 flex flex-row items-center justify-between px-2 md:px-8 pt-1 pb-4 md:py-6 font-oswald tracking-widest text-[10px] md:text-sm text-parchment uppercase bg-transparent">
+    <nav className="absolute top-0 left-0 w-full z-50 flex flex-row items-center justify-between px-2 md:px-8 pt-0 pb-4 md:py-6 font-oswald tracking-widest text-[10px] md:text-sm text-parchment uppercase bg-transparent">
        <div className="flex justify-end gap-2 md:gap-12 flex-1 mr-2 md:mr-12">
          <a href="#about" onClick={handleScroll} className="hover:text-accent transition-colors">О нас</a>
          <a href="#services" onClick={handleScroll} className="hover:text-accent transition-colors">Услуги</a>
        </div>
        <div className="flex justify-center cursor-pointer shrink-0 mx-2">
-         <img src={`${import.meta.env.BASE_URL}ikonka.png`} alt="SYNDICATE" className="h-8 md:h-16 drop-shadow-md" />
+         <img src={`${import.meta.env.BASE_URL}ikonka.png`} alt="SYNDICATE" className="h-6 md:h-16 drop-shadow-md" />
        </div>
        <div className="flex justify-start gap-2 md:gap-12 flex-1 ml-2 md:ml-12">
          <a href="#faq" onClick={handleScroll} className="hover:text-accent transition-colors">FAQ</a>
