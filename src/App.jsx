@@ -268,7 +268,7 @@ const Hero = ({ onOpenBooking }) => {
 // About
 const About = () => {
   return (
-    <section id="about" className="relative bg-transparent pt-8 pb-4 md:py-32 px-6 overflow-hidden">
+    <section id="about" className="relative bg-transparent pt-16 md:pt-32 pb-4 md:pb-32 px-6 overflow-hidden">
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 items-center">
         <div>
           <h4 className="font-oswald tracking-widest text-accent uppercase text-sm mb-2">Syndicate</h4>
