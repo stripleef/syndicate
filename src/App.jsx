@@ -267,7 +267,7 @@ const Hero = ({ onOpenBooking }) => {
 const About = () => {
   return (
     <section id="about" className="relative bg-transparent pt-8 pb-4 md:py-32 px-6 overflow-hidden">
-      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 items-center">
         <div>
           <h4 className="font-oswald tracking-widest text-accent uppercase text-sm mb-2">Syndicate</h4>
           <h2 className="font-display text-5xl md:text-7xl text-parchment mb-4 md:mb-8 drop-shadow-md">ABOUT US</h2>
@@ -280,7 +280,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="relative w-5/6 mx-auto md:w-full mt-4 md:mt-0">
+        <div className="relative w-5/6 mx-auto md:w-full mt-0">
           <div className="absolute inset-0 border-2 border-accent translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 z-0" />
           <img src={`${import.meta.env.BASE_URL}photo/vhod.jpg`} alt="Вход в Syndicate" className="relative z-10 w-full h-auto object-cover grayscale-[30%] contrast-125" />
         </div>
