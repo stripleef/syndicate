@@ -311,7 +311,7 @@ const Services = () => {
   ];
 
   const ServiceItem = ({ s }) => (
-    <div className="flex flex-col mb-10 w-full">
+    <div className="flex flex-col mb-6 md:mb-10 w-full">
       <div className="flex justify-between items-baseline w-full">
         <span className="font-oswald font-bold uppercase text-lg md:text-xl text-parchment tracking-wide shrink-0 pr-3">{s.name}</span>
         <div className="flex-1 border-b-[3px] border-dotted border-white/20 mx-2 mb-[6px]"></div>
@@ -339,7 +339,7 @@ const Services = () => {
           </div>
 
           {/* Center Graphic */}
-          <div className="flex flex-col items-center justify-center w-full md:w-[30%] shrink-0 my-6 md:my-0">
+          <div className="flex flex-col items-center justify-center w-full md:w-[30%] shrink-0 my-2 md:my-0">
              <img 
                 src={`${import.meta.env.BASE_URL}center-graphic.png`}
                 alt="Center Graphic" 
