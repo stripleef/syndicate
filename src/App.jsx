@@ -237,7 +237,6 @@ const Hero = ({ onOpenBooking }) => {
        />
        
        <NoiseOverlay />
-       <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent z-0 pointer-events-none" />
        
        <Navbar />
 
@@ -253,10 +252,10 @@ const Hero = ({ onOpenBooking }) => {
           </button>
        </div>
 
-       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 py-3 md:py-6 bg-black/60 backdrop-blur-xl text-[10px] md:text-xs font-oswald tracking-[0.2em] text-parchment/80 uppercase mt-auto border-t border-white/5">
-          <div className="flex items-center gap-3 mb-2 md:mb-0 hover:text-accent transition-colors cursor-pointer"><Phone className="w-3 h-3 md:w-4 md:h-4 text-accent"/> +7 (999) 123-45-67</div>
-          <div className="flex items-center gap-3 mb-2 md:mb-0 hover:text-accent transition-colors cursor-pointer"><MapPin className="w-3 h-3 md:w-4 md:h-4 text-accent"/> г. Ишимбай, ул. Геологическая 87</div>
-          <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Clock className="w-3 h-3 md:w-4 md:h-4 text-accent"/> ПН-ВС: 10:00 - 20:00</div>
+       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 py-3 md:py-6 bg-black/40 backdrop-blur-2xl text-[11px] md:text-sm font-oswald tracking-[0.2em] text-parchment/90 font-bold uppercase mt-auto border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+          <div className="flex items-center gap-3 mb-2 md:mb-0 hover:text-accent transition-colors cursor-pointer"><Phone className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> +7 (999) 123-45-67</div>
+          <div className="flex items-center gap-3 mb-2 md:mb-0 hover:text-accent transition-colors cursor-pointer"><MapPin className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> г. Ишимбай, ул. Геологическая 87</div>
+          <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Clock className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> ПН-ВС: 10:00 - 20:00</div>
        </div>
     </header>
   );
@@ -268,9 +267,6 @@ const Hero = ({ onOpenBooking }) => {
 const About = () => {
   return (
     <section id="about" className="relative bg-transparent py-8 md:py-32 px-6 overflow-hidden">
-      {/* Smooth transition from Hero */}
-      <div className="absolute top-0 left-0 w-full h-32 md:h-64 bg-gradient-to-b from-[#050505] to-transparent z-0 pointer-events-none" />
-      
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div>
           <h4 className="font-oswald tracking-widest text-accent uppercase text-sm mb-2">Syndicate</h4>
