@@ -252,7 +252,7 @@ const Hero = ({ onOpenBooking }) => {
           </button>
        </div>
 
-       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 py-2 md:py-6 gap-2 md:gap-0 bg-black/40 backdrop-blur-2xl text-[11px] md:text-sm font-oswald tracking-[0.2em] text-parchment/90 font-bold uppercase mt-auto border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 pt-4 pb-1 md:py-6 gap-2 md:gap-0 bg-black/40 backdrop-blur-2xl text-[11px] md:text-sm font-oswald tracking-[0.2em] text-parchment/90 font-bold uppercase mt-auto border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Phone className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> +7 (999) 123-45-67</div>
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><MapPin className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> г. Ишимбай, ул. Геологическая 87</div>
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Clock className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> ПН-ВС: 10:00 - 20:00</div>
