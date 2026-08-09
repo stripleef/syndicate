@@ -365,10 +365,10 @@ const Services = () => {
 // Gallery
 const Gallery = () => {
   const images = [
-    `${import.meta.env.BASE_URL}photo/gallery.jpg`,
-    `${import.meta.env.BASE_URL}photo/gallery2.jpg`,
-    `${import.meta.env.BASE_URL}photo/gallery3.jpg`,
-    `${import.meta.env.BASE_URL}photo/gallery4.jpg`
+    `${import.meta.env.BASE_URL}gallery.jpg`,
+    `${import.meta.env.BASE_URL}gallery2.jpg`,
+    `${import.meta.env.BASE_URL}gallery3.jpg`,
+    `${import.meta.env.BASE_URL}gallery4.jpg`
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);
