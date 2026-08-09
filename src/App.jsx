@@ -223,7 +223,7 @@ const Hero = ({ onOpenBooking }) => {
     <header ref={heroRef} className="relative w-full h-[100svh] overflow-hidden flex flex-col bg-[#050505]">
        <video 
          ref={videoRef}
-         src={`${import.meta.env.BASE_URL}video/main-1554591349.mp4`}
+         src={`${import.meta.env.BASE_URL}video/video.mp4`}
          autoPlay 
          loop={false} 
          muted 
