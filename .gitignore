@@ -7,6 +7,5 @@ dist-ssr
 !.env.example
 .DS_Store
 .npm
-package-lock.json
 *.mp4
 *.MP4
