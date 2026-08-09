@@ -253,10 +253,10 @@ const Hero = ({ onOpenBooking }) => {
           </button>
        </div>
 
-       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-12 py-6 bg-black/60 backdrop-blur-xl text-xs font-oswald tracking-[0.2em] text-parchment/80 uppercase mt-auto border-t border-white/5">
-          <div className="flex items-center gap-3 mb-4 md:mb-0 hover:text-accent transition-colors cursor-pointer"><Phone className="w-4 h-4 text-accent"/> +7 (999) 123-45-67</div>
-          <div className="flex items-center gap-3 mb-4 md:mb-0 hover:text-accent transition-colors cursor-pointer"><MapPin className="w-4 h-4 text-accent"/> г. Ишимбай, ул. Геологическая 87</div>
-          <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Clock className="w-4 h-4 text-accent"/> ПН-ВС: 10:00 - 20:00</div>
+       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 py-3 md:py-6 bg-black/60 backdrop-blur-xl text-[10px] md:text-xs font-oswald tracking-[0.2em] text-parchment/80 uppercase mt-auto border-t border-white/5">
+          <div className="flex items-center gap-3 mb-2 md:mb-0 hover:text-accent transition-colors cursor-pointer"><Phone className="w-3 h-3 md:w-4 md:h-4 text-accent"/> +7 (999) 123-45-67</div>
+          <div className="flex items-center gap-3 mb-2 md:mb-0 hover:text-accent transition-colors cursor-pointer"><MapPin className="w-3 h-3 md:w-4 md:h-4 text-accent"/> г. Ишимбай, ул. Геологическая 87</div>
+          <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Clock className="w-3 h-3 md:w-4 md:h-4 text-accent"/> ПН-ВС: 10:00 - 20:00</div>
        </div>
     </header>
   );
@@ -267,11 +267,11 @@ const Hero = ({ onOpenBooking }) => {
 // About
 const About = () => {
   return (
-    <section id="about" className="relative bg-transparent py-12 md:py-32 px-6 overflow-hidden">
+    <section id="about" className="relative bg-transparent py-8 md:py-32 px-6 overflow-hidden">
       {/* Smooth transition from Hero */}
       <div className="absolute top-0 left-0 w-full h-32 md:h-64 bg-gradient-to-b from-[#050505] to-transparent z-0 pointer-events-none" />
       
-      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div>
           <h4 className="font-oswald tracking-widest text-accent uppercase text-sm mb-2">Syndicate</h4>
           <h2 className="font-display text-5xl md:text-7xl text-parchment mb-8 drop-shadow-md">ABOUT US</h2>
@@ -284,8 +284,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="relative">
-          <div className="absolute inset-0 border-2 border-accent translate-x-4 translate-y-4 z-0" />
+        <div className="relative w-5/6 mx-auto md:w-full mt-4 md:mt-0">
+          <div className="absolute inset-0 border-2 border-accent translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 z-0" />
           <img src={`${import.meta.env.BASE_URL}photo/vhod.jpg`} alt="Вход в Syndicate" className="relative z-10 w-full h-auto object-cover grayscale-[30%] contrast-125" />
         </div>
       </div>
@@ -338,13 +338,13 @@ const Services = () => {
              {leftServices.map(s => <ServiceItem key={s.name} s={s} />)}
           </div>
 
-          {/* Center Un-stretched Graphic with Fading Edges */}
-          <div className="hidden md:flex flex-col items-center justify-center w-[30%] shrink-0">
+          {/* Center Graphic */}
+          <div className="flex flex-col items-center justify-center w-full md:w-[30%] shrink-0 my-6 md:my-0">
              <img 
                 src={`${import.meta.env.BASE_URL}center-graphic.png`}
                 alt="Center Graphic" 
                 onClick={() => setSpinDeg(prev => prev + 360)}
-                className="w-full max-w-[500px] object-contain drop-shadow-2xl cursor-pointer"
+                className="w-2/3 max-w-[200px] md:w-full md:max-w-[500px] object-contain drop-shadow-2xl cursor-pointer"
                 style={{
                   transform: `rotate(${spinDeg}deg)`,
                   transition: 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)'
@@ -468,16 +468,16 @@ const FAQ = () => {
   return (
     <section id="faq" className="bg-transparent pt-0 pb-8 md:pb-16 px-6 overflow-hidden">
 
-      <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-center">
+      <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row gap-8 md:gap-20 items-center">
         {/* Left image/graphic */}
         <div className="w-full md:w-5/12 flex flex-col items-center justify-center pt-4 order-2 md:order-1">
-           <img src={`${import.meta.env.BASE_URL}vector-chair.png`} alt="Vintage Chair" className="w-1/2 max-w-[180px] md:w-full md:max-w-[450px] object-contain mix-blend-screen opacity-90" />
-           <div className="font-display text-3xl md:text-4xl tracking-[0.2em] text-white/50 mt-4 text-center uppercase">SYNDICATE</div>
+           <img src={`${import.meta.env.BASE_URL}vector-chair.png`} alt="Vintage Chair" className="w-2/5 max-w-[150px] md:w-full md:max-w-[450px] object-contain mix-blend-screen opacity-90" />
+           <div className="font-display text-2xl md:text-4xl tracking-[0.2em] text-white/50 mt-4 text-center uppercase">SYNDICATE</div>
         </div>
         
         {/* Right FAQ */}
         <div className="w-full md:w-7/12 order-1 md:order-2">
-          <div className="mb-12">
+          <div className="mb-6 md:mb-12">
             <h4 className="font-oswald tracking-widest text-white font-bold uppercase text-sm mb-1 drop-shadow-md">SYNDICATE</h4>
             <h2 className="font-display text-6xl md:text-8xl text-white tracking-wider drop-shadow-lg">FAQ</h2>
           </div>
