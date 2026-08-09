@@ -241,8 +241,8 @@ const Hero = ({ onOpenBooking }) => {
        <Navbar />
 
        <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center mt-24 px-4">
-          <p className="hero-anim font-display-sc tracking-[0.2em] text-parchment uppercase mb-4 text-sm md:text-base drop-shadow-md font-bold">BARBER SHOP ISHIMBAY</p>
-          <h1 className="hero-anim font-display text-7xl md:text-[10rem] text-parchment mb-16 tracking-wider drop-shadow-[0_10px_25px_rgba(0,0,0,0.9)] leading-none mt-2">SYNDICATE</h1>
+          <p className="hero-anim font-display-sc tracking-[0.2em] text-parchment uppercase mb-4 text-sm md:text-base font-bold" style={{ textShadow: '0 4px 6px rgba(0,0,0,0.5)' }}>BARBER SHOP ISHIMBAY</p>
+          <h1 className="hero-anim font-display text-7xl md:text-[10rem] text-parchment mb-16 tracking-wider leading-none mt-2" style={{ textShadow: '0 10px 25px rgba(0,0,0,0.9)' }}>SYNDICATE</h1>
           
           <button 
             onClick={onOpenBooking}
