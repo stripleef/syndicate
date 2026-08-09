@@ -307,7 +307,7 @@ const Services = () => {
   ];
 
   const ServiceItem = ({ s }) => (
-    <div className="flex flex-col mb-6 md:mb-10 w-full">
+    <div className="flex flex-col w-full">
       <div className="flex justify-between items-baseline w-full">
         <span className="font-oswald font-bold uppercase text-lg md:text-xl text-parchment tracking-wide shrink-0 pr-3">{s.name}</span>
         <div className="flex-1 border-b-[3px] border-dotted border-white/20 mx-2 mb-[6px]"></div>
@@ -328,14 +328,14 @@ const Services = () => {
           </div>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 w-full relative z-10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-6 w-full relative z-10">
           {/* Left */}
-          <div className="w-full md:w-[35%] flex flex-col justify-center">
+          <div className="w-full md:w-[35%] flex flex-col justify-center gap-6 md:gap-10">
              {leftServices.map(s => <ServiceItem key={s.name} s={s} />)}
           </div>
 
           {/* Center Graphic */}
-          <div className="flex flex-col items-center justify-center w-full md:w-[30%] shrink-0 my-2 md:my-0">
+          <div className="flex flex-col items-center justify-center w-full md:w-[30%] shrink-0 my-0">
              <img 
                 src={`${import.meta.env.BASE_URL}center-graphic.png`}
                 alt="Center Graphic" 
@@ -349,7 +349,7 @@ const Services = () => {
           </div>
 
           {/* Right */}
-          <div className="w-full md:w-[35%] flex flex-col justify-center">
+          <div className="w-full md:w-[35%] flex flex-col justify-center gap-6 md:gap-10">
              {rightServices.map(s => <ServiceItem key={s.name} s={s} />)}
           </div>
         </div>
