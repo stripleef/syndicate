@@ -266,12 +266,12 @@ const Hero = ({ onOpenBooking }) => {
 // About
 const About = () => {
   return (
-    <section id="about" className="relative bg-transparent py-8 md:py-32 px-6 overflow-hidden">
+    <section id="about" className="relative bg-transparent pt-8 pb-4 md:py-32 px-6 overflow-hidden">
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div>
           <h4 className="font-oswald tracking-widest text-accent uppercase text-sm mb-2">Syndicate</h4>
-          <h2 className="font-display text-5xl md:text-7xl text-parchment mb-8 drop-shadow-md">ABOUT US</h2>
-          <div className="font-body text-parchment/70 leading-relaxed space-y-4 mb-10">
+          <h2 className="font-display text-5xl md:text-7xl text-parchment mb-4 md:mb-8 drop-shadow-md">ABOUT US</h2>
+          <div className="font-body text-parchment/70 leading-relaxed space-y-4 mb-0 md:mb-10">
             <p>
               Добро пожаловать в Syndicate — место, где мужской стиль возведен в абсолют. Мы не просто стрижем волосы, мы создаем ваш персональный образ, подчеркивая характер и мужскую харизму. 
             </p>
@@ -320,7 +320,7 @@ const Services = () => {
   return (
     <div className="relative bg-transparent overflow-hidden">
       
-      <section id="services" className="pt-12 pb-0 md:py-32 px-6 text-parchment relative z-10 max-w-[1400px] mx-auto">
+      <section id="services" className="pt-6 pb-0 md:py-32 px-6 text-parchment relative z-10 max-w-[1400px] mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-5xl md:text-7xl mb-4 tracking-wider text-parchment drop-shadow-lg">BARBER SERVICES</h2>
           <div className="flex justify-center gap-3 text-accent mb-16 drop-shadow-md">
