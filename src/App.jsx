@@ -220,7 +220,7 @@ const Hero = ({ onOpenBooking }) => {
   }, []);
 
   return (
-    <header ref={heroRef} className="relative w-full h-[100svh] overflow-hidden flex flex-col bg-[#050505]">
+    <header ref={heroRef} className="relative w-full h-[100dvh] overflow-hidden flex flex-col bg-[#050505]">
        <video 
          ref={videoRef}
          src={`${import.meta.env.BASE_URL}video/0809.mp4`}
@@ -228,7 +228,7 @@ const Hero = ({ onOpenBooking }) => {
          loop={false} 
          muted 
          playsInline
-         className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-100 scale-[1.3]"
+         className="absolute inset-0 w-full h-full object-cover object-bottom z-0 opacity-100 scale-[1.3]"
        />
        
        {/* Cinematic black screen fader */}
