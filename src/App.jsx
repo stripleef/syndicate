@@ -103,10 +103,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav 
-      className="absolute top-0 left-0 w-full z-50 flex flex-row items-center justify-between px-2 md:px-8 pb-4 md:py-6 font-oswald tracking-widest text-[12px] md:text-sm font-bold text-parchment uppercase bg-transparent"
-      style={{ paddingTop: 'max(1rem, env(safe-area-inset-top))' }}
-    >
+    <nav className="absolute top-0 left-0 w-full z-50 flex flex-row items-start md:items-center justify-between px-2 md:px-8 pt-0 pb-4 md:py-6 font-oswald tracking-widest text-[12px] md:text-sm font-bold text-parchment uppercase bg-transparent">
        <div className="flex justify-end gap-2 md:gap-12 flex-1 mr-2 md:mr-12">
          <a href="#about" onClick={handleScroll} className="hover:text-accent transition-colors">О нас</a>
          <a href="#services" onClick={handleScroll} className="hover:text-accent transition-colors">Услуги</a>
