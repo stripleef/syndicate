@@ -228,7 +228,7 @@ const Hero = ({ onOpenBooking }) => {
          loop={false} 
          muted 
          playsInline
-         className="absolute inset-0 w-full h-full object-cover z-0 opacity-100 brightness-110 contrast-125 saturate-150"
+         className="absolute inset-0 w-full h-full object-cover z-0 opacity-100"
        />
        
        {/* Cinematic black screen fader */}
