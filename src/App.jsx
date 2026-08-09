@@ -103,7 +103,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 flex flex-row items-center justify-between px-2 md:px-8 pt-1 pb-1 md:py-6 font-oswald tracking-widest text-[12px] md:text-sm font-bold text-parchment uppercase bg-black md:bg-transparent">
+    <nav className="absolute top-0 left-0 w-full z-50 flex flex-row items-center justify-between px-2 md:px-8 pt-2 pb-2 md:py-6 font-oswald tracking-widest text-[12px] md:text-sm font-bold text-parchment uppercase bg-transparent">
        <div className="flex justify-end gap-2 md:gap-12 flex-1 mr-2 md:mr-12">
          <a href="#about" onClick={handleScroll} className="hover:text-accent transition-colors">О нас</a>
          <a href="#services" onClick={handleScroll} className="hover:text-accent transition-colors">Услуги</a>
@@ -252,7 +252,7 @@ const Hero = ({ onOpenBooking }) => {
           </button>
        </div>
 
-       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 pt-2 pb-1 md:pb-6 gap-1 md:gap-0 bg-black/40 backdrop-blur-2xl text-[11px] md:text-sm font-oswald tracking-[0.2em] text-parchment/90 font-bold uppercase mt-auto border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 pt-2 pb-0 md:pb-6 gap-1 md:gap-0 bg-black/40 backdrop-blur-2xl text-[11px] md:text-sm font-oswald tracking-[0.2em] text-parchment/90 font-bold uppercase mt-auto border-t border-white/10 shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Phone className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> +7 (999) 123-45-67</div>
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><MapPin className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> г. Ишимбай, ул. Геологическая 87</div>
           <div className="flex items-center gap-3 hover:text-accent transition-colors cursor-pointer"><Clock className="w-3.5 h-3.5 md:w-5 md:h-5 text-accent drop-shadow-md"/> ПН-ВС: 10:00 - 20:00</div>
